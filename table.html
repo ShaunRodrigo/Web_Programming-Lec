@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Web-programming-1 Lecture Homework</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="table.html" class="active">Table</a></li>
+            <li><a href="html5.html">HTML5</a></li>
+            <li><a href="chartjs.html">ChartJS</a></li>
+            <li><a href="ajax.html">AJAX</a></li>
+            <li><a href="oojs.html">OOJS</a></li>
+        </ul>
+    </nav>
+
+    <aside>
+        <h3>Table Features</h3>
+        <p>This table allows adding, updating, and deleting records.</p>
+    </aside>
+
+    <div id="content">
+        <h2>Manage Records</h2>
+
+        <!-- Form to Add New Row -->
+        <form id="addForm">
+            <input type="text" id="name" placeholder="Enter Name" required>
+            <input type="number" id="age" placeholder="Enter Age" required>
+            <input type="text" id="city" placeholder="Enter City" required>
+            <button type="submit">Add</button>
+        </form>
+
+        <!-- Table for Displaying Data -->
+        <table border="1" id="dataTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample Data -->
+                <tr>
+                    <td>1</td>
+                    <td>John Doe</td>
+                    <td>25</td>
+                    <td>New York</td>
+                    <td>
+                        <button onclick="editRow(this)">Edit</button>
+                        <button onclick="deleteRow(this)">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>Created by: Shaun Rodrigo | Neptun Code: W13Q7L</p>
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>
