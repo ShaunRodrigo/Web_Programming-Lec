@@ -4,6 +4,16 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 }
+#para {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-transform: uppercase;
+    text-shadow: 2px 2px #df5d5d55;
+    color: rgb(67, 100, 248);
+    font-weight: bold;
+}
 
 header {
     background: #333;
