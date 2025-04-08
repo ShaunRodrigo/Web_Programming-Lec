@@ -3,7 +3,6 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
-    
 }
 
 header {
@@ -51,14 +50,14 @@ aside {
 }
 
 footer {
-    background-color: #222;
-    color: white;
+    clear: both;
     text-align: center;
-    line-height: 40px;
-    position: absolute;
+    padding: 10px;
+    background: #222;
+    color: white;
+    position: relative;
     bottom: 0;
     width: 100%;
-    clear: both;
 }
 
 table {
@@ -76,4 +75,10 @@ th, td {
 
 tr:hover {
     background: lightgray;
+}
+
+canvas {
+    max-width: 600px;
+    margin: 20px auto;
+    display: block;
 }
