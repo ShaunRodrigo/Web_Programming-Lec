@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("addForm");
     const tableBody = document.querySelector("#dataTable tbody");
-    let idCounter = 2; 
+    let idCounter = 11; 
 
     
     form.addEventListener("submit", function (event) {
