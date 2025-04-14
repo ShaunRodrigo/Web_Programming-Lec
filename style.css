@@ -53,6 +53,11 @@ aside {
     background: #ddd;
 }
 
+section {
+    clear: both;
+}
+
+
 #content {
     width: 75%;
     float: right;
@@ -88,7 +93,21 @@ tr:hover {
 }
 
 canvas {
+    float: left;
     max-width: 600px;
     margin: 20px auto;
     display: block;
+}
+
+#div1, #div2 {
+    float: left;
+    width: 160px;
+    height: 120px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px dashed gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fafafa;
 }

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Features</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Scripts/html5.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>HTML5 Features</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li><a href="html5.html" class="active">HTML5</a></li>
+            <li><a href="chartjs.html">ChartJS</a></li>
+            <li><a href="ajax.html">AJAX</a></li>
+            <li><a href="oojs.html">OOJS</a></li>
+        </ul>
+    </nav>
+
+    <aside>
+        <h3>HTML5 APIs</h3>
+        <p>Explore various HTML5 features like Local Storage, Geolocation, Drag & Drop, Canvas, and Web Workers.</p>
+    </aside>
+
+    <div id="content">
+        <h2>HTML5 Features in Action</h2>
+
+        <section>
+            <h3>1. Local Storage</h3>
+            <input type="text" id="storageInput" placeholder="Enter text to save">
+            <button onclick="saveToLocalStorage()">Save</button>
+            <button onclick="loadFromLocalStorage()">Load</button>
+            <p id="storageResult">Stored Value: </p>
+        </section>
+
+        <section>
+            <h3>2. Geolocation</h3>
+            <button onclick="getLocation()">Get My Location</button>
+            <p id="locationResult"></p>
+        </section>
+
+        <section>
+            <h3>3. Drag & Drop</h3>
+            <div id="dragDropContainer">
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <img src="art.png" draggable="true" ondragstart="drag(event)" id="drag1" width="150" height="100">
+            </div>
+            
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+            </div>
+                <div style="clear: both;"></div>
+            </div>
+        </section>
+
+        <section>
+            <h3>4. Canvas</h3>
+            <canvas id="myCanvas" width="300" height="150" style="border:1px solid black;"></canvas>
+            <button onclick="drawOnCanvas()">Draw</button>
+            <button onclick="clearCanvas()">Clear</button>
+        </section>
+
+        <section>
+            <h3>5. Web Workers</h3>
+            <button onclick="startWorker()">Start Worker</button>
+            <button onclick="stopWorker()">Stop Worker</button>
+            <p id="workerResult"></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>Created by: Melik Kaan Catikoglu | Neptun Code: ETUAF5</p>
+    </footer>
+</body>
+</html>
