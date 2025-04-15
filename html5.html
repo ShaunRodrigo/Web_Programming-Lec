@@ -61,10 +61,14 @@
 
         <section>
             <h3>4. Canvas</h3>
-            <canvas id="myCanvas" width="300" height="150" style="border:1px solid black;"></canvas>
-            <button onclick="drawOnCanvas()">Draw</button>
-            <button onclick="clearCanvas()">Clear</button>
-        </section>
+            <div class="canvas-container">
+              <div class="canvas-controls">
+                <button onclick="drawOnCanvas()">Draw</button>
+                <button onclick="clearCanvas()">Clear</button>
+              </div>
+              <canvas id="myCanvas" width="300" height="150"></canvas>
+            </div>
+          </section>
 
         <section>
             <h3>5. Web Workers</h3>
