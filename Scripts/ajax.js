@@ -71,7 +71,7 @@ async function create() {
   }
 }
 
-// GET DATA FOR ID
+
 async function getDataForId() {
   let response = await fetch(url, {
     method: 'post',
@@ -95,7 +95,7 @@ async function getDataForId() {
   }
 }
 
-// UPDATE
+
 async function update() {
   let id = document.getElementById("idUpd").value;
   let name = document.getElementById("name2").value;
@@ -130,7 +130,7 @@ async function update() {
   }
 }
 
-// DELETE
+
 async function deleteF() {
   let id = document.getElementById("idDel").value;
 
@@ -155,7 +155,7 @@ async function deleteF() {
   }
 }
 
-// Auto-load on page load
+
 window.onload = function () {
   read();
 };
