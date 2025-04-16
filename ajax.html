@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AJAX CRUD</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="Scripts/ajax.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>AJAX CRUD Application</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="table.html">Table</a></li>
+      <li><a href="html5.html">HTML5</a></li>
+      <li><a href="chartjs.html">ChartJS</a></li>
+      <li><a href="ajax.html" class="active">AJAX</a></li>
+      <li><a href="oojs.html">OOJS</a></li>
+    </ul>
+  </nav>
+
+  <aside>
+    <h3>AJAX Menu</h3>
+    <p>Perform Create, Read, Update, and Delete operations using the API.</p>
+  </aside>
+
+  <main>
+    <div id="content">
+
+      <section>
+        <h2>Read</h2>
+        <div id="code"></div>
+        <div id="readDiv"></div>
+      </section>
+
+      <section>
+        <h2>Create</h2>
+        <input id="name1" placeholder="Name" maxlength="30" />
+        <input id="height1" placeholder="Height" maxlength="30" />
+        <input id="weight1" placeholder="Weight" maxlength="30" />
+        <button onclick="create()">Create</button>
+        <div id="createResult"></div>
+      </section>
+
+      <section>
+        <h2>Update</h2>
+        <input id="idUpd" placeholder="ID to update" />
+        <button onclick="getDataForId()">Get Data For ID</button><br>
+        <input id="name2" placeholder="Name" maxlength="30" />
+        <input id="height2" placeholder="Height" maxlength="30" />
+        <input id="weight2" placeholder="Weight" maxlength="30" />
+        <button onclick="update()">Update</button>
+        <div id="updateResult"></div>
+      </section>
+
+      <section>
+        <h2>Delete</h2>
+        <input id="idDel" placeholder="ID to delete" />
+        <button onclick="deleteF()">Delete</button>
+        <div id="deleteResult"></div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Created by Melik Kaan Çatikoglu | Neptun Code: ETUAF5</p>
+  </footer>
+
+</body>
+</html>
